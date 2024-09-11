@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.guessdiv {
+  background: linear-gradient(135deg, #283c86 0%, #45a247 50%, #d4fc79 100%);
+  border-radius: 15px;
+  display: flex;
+  width: 93%;
+  max-width: 500px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 0;
+  right: 1%;
+  left: 1%;
+  z-index: 99999999999999;
+  height: 50px;
+  border: #4b6b6e solid 2px;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+}
+
+.timer {
+  background: linear-gradient(135deg, #283c86 0%, #45a247 50%, #d4fc79 100%);
+  border-radius: 15px;
+  display: flex;
+  width: 100px;
+  height: 50px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: #4b6b6e solid 2px;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999999999999;
+  visibility: visible;
+}
+
+.timer h1 {
+  font-size: 34px;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+@keyframes rollingAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.submitbutt {
+  padding: 10px;
+  margin-right: auto;
+  width: 100px;
+  color: #4b6b6e;
+  background-color: #fffffa;
+  border: 3px solid #4b6b6e;
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+.submitbutt:hover {
+  cursor: pointer;
+  box-shadow: 0 0 15px 5px rgba(148, 220, 226, 0.8);
+}
+
+.dateinput {
+  margin: 10px;
+  padding: 10px;
+  width: 120px;
+  color: #4b6b6e;
+  background-color: #fffffa;
+  border: 3px solid #4b6b6e;
+  outline: none;
+  border-radius: 15px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.webinput {
+  margin-left: auto;
+  padding: 10px;
+  width: calc(30% - 180px);
+  min-width: 120px;
+  color: #4b6b6e;
+  background-color: #fffffa;
+  border: 3px solid #4b6b6e;
+  outline: none;
+  border-radius: 15px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.webinput:focus,
+.dateinput:focus {
+  cursor: pointer;
+  box-shadow: 0 0 15px 5px rgba(148, 220, 226, 0.8);
+}
