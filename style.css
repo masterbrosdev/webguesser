@@ -170,3 +170,23 @@ body {
 #nextRoundBtn:hover {
   background-color: #283c86;
 }
+
+.ad-left {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.ad-right {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f4f4f4;
+  text-align: center;
+}
