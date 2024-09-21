@@ -159,14 +159,37 @@ body {
 }
 
 #nextRoundBtn {
-  background-color: #4b6b6e;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+  padding: 10px;
+  margin-right: auto;
+  width: 100px;
+  color: #4b6b6e;
+  background-color: #fffffa;
+  border: 3px solid #4b6b6e;
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 15px;
 }
 
 #nextRoundBtn:hover {
-  background-color: #283c86;
+  cursor: pointer;
+  box-shadow: 0 0 15px 5px rgba(148, 220, 226, 0.8);
+}
+
+.ad-left {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.ad-right {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f4f4f4;
+  text-align: center;
 }
